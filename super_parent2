@@ -1,3 +1,17 @@
+####Question #######
+We are given two arrays of stringsPandC.A stringcinCis a child of a stringpinP(andpis the parent ofc)
+if every letter incoccurs inp(taking frequency into account).
+For example, ”hii” is a child of ”hiroshima” but not of”hitler”.A stringpfromPis a ’super parent’ 
+if pis the parent of every stringcinC.Return a list of all the ’super parents’ inP. 
+The words only have to be returned in the order they were originally inP.Note: 
+Each string in both arrays consists of lowercase alphabets ONLY.
+Example:For P: [”hiroshima”, ”hitler”, ”honolulu”, ”hismanic”], andFor C: [”hil”, ”mah”, ”his”]Answer:  Super Parents:  [”hiroshima”, ”hismanic”]2
+
+
+
+
+####Solution ####
+
 from  collections import Counter
 parent =['hiroshima', 'hitler', 'honolulu','hismanic']
 child =['hii','mah','his']
