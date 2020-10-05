@@ -1,0 +1,21 @@
+from  collections import Counter
+parent =['hiroshima', 'hitler', 'honolulu','hismanic']
+child =['hii','mah','his']
+s = Counter()
+for e in child:
+    s = s | Counter(e)
+ls =[]
+for h in parent:
+    f =0
+    e = Counter(h)
+    # print(e['h'],"qq")
+    for m in s:
+        if m not in  e  :
+            f =1
+            break
+        if e[m]<s[m]:
+            f =1 
+            break
+    if f ==0:
+        ls.append(h)
+print(ls)
