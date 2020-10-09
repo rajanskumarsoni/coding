@@ -1,9 +1,11 @@
 #############For question description look at below link
 # https://imgur.com/a/qBLtQSk
+############For maxsumgrid function watch below video
+# https://www.youtube.com/watch?v=WxjYE4_agbo&ab_channel=PrakashShukla
 
 grid = [[2,2,2],[3,3,3],[4,4,4]]
 
-def foo(dp,k,l):
+def maxsumgrid(dp,k,l):
     m = 0
     for i in range(k,l+1):
         for j in range(k,l+1):
@@ -23,7 +25,7 @@ def search(grid,mxval):
     size =0
     while s<= e:
         
-        a = foo(dp,m,l)
+        a = maxsumgrid(dp,m,l)
         if a<=mxval:
             size = m 
             s = m+1 
