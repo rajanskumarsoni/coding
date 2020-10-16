@@ -1,3 +1,5 @@
+## https://imgur.com/a/Xyqf3Wo
+
 import math
 rn = 10
 a = math.sqrt(rn)
